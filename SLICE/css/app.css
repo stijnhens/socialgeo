@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "MontBold";
+  src: url('/socialgeo/SLICE/assets/fonts/Montserrat-Bold.eot');
+  src: url('/socialgeo/SLICE/assets/fonts/Montserrat-Bold.eot?#iefix') format('eot'), url('/socialgeo/SLICE/assets/fonts/Montserrat-Bold.woff') format('woff'), url('/socialgeo/SLICE/assets/fonts/Montserrat-Bold.ttf') format('truetype'), url('/socialgeo/SLICE/assets/fonts/Montserrat-Bold.svg#MontBold') format('svg');
+  font-weight: "normal";
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "MontReg";
+  src: url('/socialgeo/SLICE/assets/fonts/Montserrat-Regular.eot');
+  src: url('/socialgeo/SLICE/assets/fonts/Montserrat-Regular.eot?#iefix') format('eot'), url('/socialgeo/SLICE/assets/fonts/Montserrat-Regular.woff') format('woff'), url('/socialgeo/SLICE/assets/fonts/Montserrat-Regular.ttf') format('truetype'), url('/socialgeo/SLICE/assets/fonts/Montserrat-Regular.svg#MontReg') format('svg');
+  font-weight: "normal";
+  font-style: "normal";
+}
+
+/* COLORS */
+/* ===== INFO ==================================================================
+   
+   Author: Stijn Hens at heismestudio.com
+   Theme: Template Name
+   Copyright: http://heismestudio.com
+   
+   Long nights and a lot of coffee have been put in this website. 
+   GTFO don't steal code!
+   
+   
+   ========================================================================== */
+/* line 15, ../sass/app.scss */
+body {
+  background: #f1f6fb;
+  color: #5d92cb;
+  font-family: 'MontReg';
+}
+
+/* line 22, ../sass/app.scss */
+.contentwrapper {
+  width: 960px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 28, ../sass/app.scss */
+header {
+  z-index: 999;
+  color: #f1f6fb;
+}
+
+/* line 33, ../sass/app.scss */
+.navbar {
+  border: none;
+}
+
+/* line 37, ../sass/app.scss */
+.navbar-inverse .navbar-inner {
+  background: #5d92cb;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 44, ../sass/app.scss */
+.navbar .brand {
+  font-family: 'MontBold';
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+/* line 50, ../sass/app.scss */
+.navbar .nav > li > a {
+  padding: 10px 0 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 56, ../sass/app.scss */
+.navbar-inverse .nav > li > a {
+  font-family: 'MontReg';
+  font-size: 0.9em;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+}
+
+/* line 63, ../sass/app.scss */
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus, .navbar-inverse .nav > li > a:hover {
+  color: #f1f6fb;
+  background: no-repeat;
+  border-bottom: 3px solid #517aaa;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 71, ../sass/app.scss */
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+  color: #f1f6fb;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+/* line 78, ../sass/app.scss */
+.spacer {
+  position: relative;
+  height: 60px;
+  width: 100%;
+}
+
+/* line 84, ../sass/app.scss */
+#main {
+  position: relative;
+}
+
+/* line 89, ../sass/app.scss */
+.a-map {
+  width: 100%;
+}
+
+/* COMMON TYPO */
+/* line 96, ../sass/app.scss */
+h1 {
+  font-size: 1.6em;
+  font-weight: 400;
+  font-family: 'MontBold';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 10px 0 20px 0;
+  padding: 0;
+  line-height: 1em;
+  color: #517aaa;
+}
+
+/* line 108, ../sass/app.scss */
+h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: 'MontBold';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 15px 0;
+  padding: 0;
+  line-height: 1em;
+  color: #517aaa;
+}
+/* line 119, ../sass/app.scss */
+h2 a {
+  color: #517aaa;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 123, ../sass/app.scss */
+h2 a:hover, h2 a:visited, h2 a:active {
+  text-decoration: none;
+}
+
+/* line 129, ../sass/app.scss */
+h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: 'MontReg';
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 0 0 15px 0;
+  padding: 0 0 10px 0;
+  line-height: 1em;
+  color: #5d92cb;
+}
+
+/* line 143, ../sass/app.scss */
+legend {
+  color: #517aaa;
+  border-bottom-color: #d7e3ef;
+  margin-bottom: 0px;
+  padding-top: 20px;
+}
+
+/* line 150, ../sass/app.scss */
+.date {
+  font-size: 0.9em;
+  color: #82addc;
+  margin: 0 15px;
+}
+
+/* line 158, ../sass/app.scss */
+span.date, h2.newstitle, h2.eventtitle {
+  display: inline;
+}
+
+/* line 162, ../sass/app.scss */
+.newstxt, .eventtxt {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+/* line 169, ../sass/app.scss */
+.newscont .newstxt, .newscont .eventtxt, .eventcont .newstxt, .eventcont .eventtxt {
+  display: none;
+}
+/* line 173, ../sass/app.scss */
+.newscont .newsitem, .newscont .eventitem, .eventcont .newsitem, .eventcont .eventitem {
+  border-bottom: 1px solid #d7e3ef;
+}
+
+/* line 180, ../sass/app.scss */
+.mainselection h3, .mainselection h4 {
+  text-align: center;
+}
+/* line 184, ../sass/app.scss */
+.mainselection h4 {
+  font-weight: 400;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0;
+}
+/* line 192, ../sass/app.scss */
+.mainselection .newsitem, .mainselection .eventitem {
+  margin-bottom: 30px;
+}
+/* line 196, ../sass/app.scss */
+.mainselection .row-fluid {
+  margin-top: 40px;
+}
+
+/* line 203, ../sass/app.scss */
+h5 {
+  font-weight: 400;
+  color: #517aaa;
+  margin: 0 0 0;
+  padding: 0;
+}
+
+/* line 210, ../sass/app.scss */
+.eventtxt p {
+  margin: 0;
+}
+
+/* line 214, ../sass/app.scss */
+.newsitem, .eventitem {
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* GENTSE WIJKEN */
+/* line 223, ../sass/app.scss */
+.wijken-list ul {
+  margin: 0;
+  padding-left: 15px;
+  border-left: 1px solid #d7e3ef;
+}
+/* line 228, ../sass/app.scss */
+.wijken-list ul li {
+  list-style-type: none;
+}
+
+/* EDIT PROFILE */
+/* line 237, ../sass/app.scss */
+.edit-profile .row-fluid {
+  margin: 20px 0;
+}
+/* line 241, ../sass/app.scss */
+.edit-profile #user-avatar {
+  float: left;
+  border: 2px solid #fff;
+}
+/* line 247, ../sass/app.scss */
+.edit-profile #avatarhandlers button {
+  display: list-item;
+}
+
+/* Sticky footer styles
+     -------------------------------------------------- */
+/* line 264, ../sass/app.scss */
+html, body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+/* line 270, ../sass/app.scss */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+/* line 279, ../sass/app.scss */
+#push, footer {
+  height: 60px;
+}
+
+/* line 283, ../sass/app.scss */
+footer {
+  background-color: #f5f5f5;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  /* line 289, ../sass/app.scss */
+  footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
