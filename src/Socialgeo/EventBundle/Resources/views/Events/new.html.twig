@@ -1,0 +1,31 @@
+{% extends 'EventBundle:Default:index.html.twig'%}
+
+{% block body %}
+<h1>Events creation</h1>
+
+<form action="{{ path('events_create', {'district': 'Oostakker'})  }}" method="post" {{ form_enctype(form) }}>
+    {{ form_row(form.title) }}
+
+    {{ form_row(form.body) }}
+    {{ form_row(form.owner) }}
+
+    {{ form_row(form.district_id) }}
+    {{ form_row(form.created) }}
+    {{ form_row(form.approved) }}
+    {{ form_rest(form) }}
+
+
+    <p>
+        <button type="submit">Create</button>
+    </p>
+</form>
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('events', {'district': 'Oostakker'})  }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+
+{% endblock %}

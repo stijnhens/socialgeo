@@ -1,0 +1,59 @@
+{{ "1987-08-09 00:00:00"|date("m/d/Y") }}
+
+
+<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+    <fieldset>
+        <legend>{{ step }}</legend>
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.email) }}
+                </label>
+                {{ form_widget(form.email) }}
+                <span class="help-block">
+                    {{ form_errors(form.email) }}
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.username) }}
+                </label>
+                {{ form_widget(form.username) }}
+                <span class="help-block">
+                        {{ form_errors(form.username) }}
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.plainPassword.first) }}
+                </label>
+                     {{ form_widget(form.plainPassword.first) }}
+                <span class="help-block">
+                    {{ form_errors(form.plainPassword.first) }}
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.plainPassword.second) }}
+                </label>
+                {{ form_widget(form.plainPassword.second) }}
+                <span class="help-block">
+                    {{ form_errors(form.plainPassword.second) }}
+                </span>
+            </div>
+        </div>
+
+
+
+        {{ form_errors(form._token) }}
+        {{ form_widget(form._token) }}
+        {{ form_errors(form) }}
+        <input type="submit" value="Next" class="btn" name="step2">
+    </fieldset>
+</form>

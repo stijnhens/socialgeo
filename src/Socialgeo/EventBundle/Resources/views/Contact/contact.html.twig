@@ -1,0 +1,14 @@
+{% extends 'EventBundle:Default:index.html.twig'%}
+
+{% block body %}
+    <div class="row-fluid">
+        <h1>Contact Us!</h1>
+    </div>
+
+    <form action="{{ path('contact') }}" method="post" {{ form_enctype(form) }}>
+
+    {{ form_widget(form) }}
+
+    <input type="submit" />
+
+{% endblock %}

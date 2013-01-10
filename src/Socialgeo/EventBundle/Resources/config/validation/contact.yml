@@ -1,0 +1,18 @@
+# Socialgeo/EventBundle/Resources/config/validation/contact.yml
+
+Socialgeo\EventBundle\Entity\Enquiry:
+    properties:
+        name:
+            - NotBlank: ~
+        email:
+            - Email:
+                message: The email "{{ value }}" is not a valid email.
+                checkMX: true
+        subject:
+            - NotBlank: ~
+
+
+        body:
+            - NotBlank: ~
+            - DateTime: ~
+

@@ -1,0 +1,6 @@
+<form action="/app_dev.php/login_check" method="post" class="navbar-form pull-right">
+    <input type="hidden" name="_csrf_token" value="{{ csrf_generated }}" />
+    <input type="text" class="input-small" id="username" placeholder="username" name="_username" value="" required="required" />
+    <input type="password" class="input-small" id="password" placeholder="password" name="_password" required="required" />
+    <input type="submit" class="btn" id="_submit" name="_submit" value="Login" />
+</form>

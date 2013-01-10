@@ -1,0 +1,20 @@
+<div class="fos_user_user_show">
+
+    <!-- STEP 1 -->
+    <p>{{ 'profile.show.email'|trans({}, 'FOSUserBundle') }}: {{ user.email }}</p>
+    <p>{{ 'profile.show.username'|trans({}, 'FOSUserBundle') }}: {{ user.username }}</p>
+
+    <!-- STEP 2 -->
+    <p>{{ 'profile.show.name'|trans({}, 'FOSUserBundle') }}: {{ user.name }}</p>
+    <p>{{ 'profile.show.lastname'|trans({}, 'FOSUserBundle') }}: {{ user.lastname }}</p>
+    <p>{{ 'profile.show.gender'|trans({}, 'FOSUserBundle') }}: {{ user.gender }}</p>
+    <p>{{ 'profile.show.birthday'|trans({}, 'FOSUserBundle') }}: {{ user.birthday|date("m/d/Y") }}</p>
+    <p>{{ 'profile.show.nationality'|trans({}, 'FOSUserBundle') }}: {{ user.nationality }}</p>
+
+    <!-- STEP 3 -->
+    <p>{{ 'profile.show.street'|trans({}, 'FOSUserBundle') }}: {{ user.street }}</p>
+    <p>{{ 'profile.show.postalcode'|trans({}, 'FOSUserBundle') }}: {{ user.postalcode }}</p>
+    <p>{{ 'profile.show.city'|trans({}, 'FOSUserBundle') }}: {{ user.city }}</p>
+
+
+</div>

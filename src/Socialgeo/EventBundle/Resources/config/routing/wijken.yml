@@ -1,0 +1,7 @@
+wijken:
+    pattern:  /wijken
+    defaults: { _controller: "EventBundle:Wijk:index" }
+
+wijken_show:
+    pattern:  /wijken/{naam}
+    defaults: { _controller: "EventBundle:Wijk:wijkportal" }

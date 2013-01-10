@@ -1,0 +1,17 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+
+    {% if step == 'step1' %}
+    {% include "FOSUserBundle:Registration:register_content_step1.html.twig" %}
+    {% endif %}
+
+    {% if step == 'step2' %}
+        {% include "FOSUserBundle:Registration:register_content_step2.html.twig" %}
+    {% endif %}
+
+    {% if step == 'step3' %}
+        {% include "FOSUserBundle:Registration:register_content_step3.html.twig" %}
+    {% endif %}
+
+{% endblock fos_user_content %}

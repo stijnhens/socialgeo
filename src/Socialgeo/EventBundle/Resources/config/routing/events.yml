@@ -1,0 +1,34 @@
+events:
+    pattern:  /
+    defaults: { _controller: "EventBundle:Events:index" }
+
+events_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "EventBundle:Events:show" }
+
+events_new:
+    pattern:  /new
+    defaults: { _controller: "EventBundle:Events:new" }
+
+events_district:
+    pattern:  /district
+    defaults: { _controller: "EventBundle:Events:index" }
+
+events_create:
+    pattern:  /create
+    defaults: { _controller: "EventBundle:Events:create" }
+    requirements: { _method: post }
+
+events_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "EventBundle:Events:edit" }
+
+events_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "EventBundle:Events:update" }
+    requirements: { _method: post }
+
+events_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "EventBundle:Events:delete" }
+    requirements: { _method: post }

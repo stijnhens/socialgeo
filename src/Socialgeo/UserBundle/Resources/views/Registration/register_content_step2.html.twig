@@ -1,0 +1,113 @@
+<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+    <fieldset>
+        <legend>{{ step }}</legend>
+            <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.name) }}
+                </label>
+                    {{ form_widget(form.name) }}
+                <span class="help-block">
+                    {{ form_errors(form.name) }}
+                </span>
+            </div>
+            </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.lastname) }}
+                </label>
+                {{ form_widget(form.lastname) }}
+                <span class="help-block">
+                    {{ form_errors(form.lastname) }}
+                </span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.birthday) }}
+                </label>
+                {{ form_widget(form.birthday) }}
+                <span class="help-block">
+                    {{ form_errors(form.birthday) }}
+                </span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.nationality) }}
+                </label>
+                {{ form_widget(form.nationality) }}
+                <span class="help-block">
+                    {{ form_errors(form.nationality) }}
+                </span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.gender) }}
+                </label>
+                {{ form_widget(form.gender) }}
+                <span class="help-block">
+                    {{ form_errors(form.gender) }}
+                </span>
+            </div>
+        </div>
+
+    </fieldset>
+
+    <input type="submit" value="Next" name="step3">
+
+ <div style="visibility: hidden">
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.email) }}
+                </label>
+                {{ form_widget(form.email) }}
+                <span class="help-block">
+                    {{ form_errors(form.email) }}
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                    {{ form_label(form.username) }}
+                </label>
+                {{ form_widget(form.username) }}
+                <span class="help-block">
+                        {{ form_errors(form.username) }}
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <label>
+                </label>
+                <input type="text" id="fos_user_registration_form_plainPassword_first" name="fos_user_registration_form[plainPassword][first]" required="required" placeholder="choose password" value="{{ form.vars.value.plainPassword }}">
+                <input type="text" id="fos_user_registration_form_plainPassword_second" name="fos_user_registration_form[plainPassword][second]" required="required" placeholder="choose password" value="{{ form.vars.value.plainPassword }}">
+                <span class="help-block">
+                </span>
+            </div>
+        </div>
+
+
+
+        {{ form_errors(form._token) }}
+        {{ form_widget(form._token) }}
+        {{ form_errors(form) }}
+
+    </fieldset>
+ </div>
+
+    <input type="submit" value="Next" name="step3">
+
+</form>

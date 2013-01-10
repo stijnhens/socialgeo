@@ -1,0 +1,22 @@
+_default_import:
+    resource: routing/default.yml
+
+_wijken_import:
+    resource: routing/wijken.yml
+
+_contact_import:
+    resource: routing/contact.yml
+
+loginpart:
+    pattern:  /loginpart
+    defaults: { _controller: EventBundle:Parts:login }
+
+
+
+EventBundle_event:
+    resource: "@EventBundle/Resources/config/routing/event.yml"
+    prefix:   /
+
+EventBundle_events:
+    resource: "@EventBundle/Resources/config/routing/events.yml"
+    prefix:   /wijken/{district}/events
